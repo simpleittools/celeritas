@@ -16,4 +16,7 @@ build_cli:
 
 ## build: builds the command line tool to dist directory
 build:
+	@go build -o ./dist/celeritas ./cmd/cli
+
+build_windows:
 	@go build -o ./dist/celeritas.exe ./cmd/cli
